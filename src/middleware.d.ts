@@ -56,16 +56,15 @@ export interface ajvValidatorOptions {
     keywords?: any;
     makeOptionalAttributesNullable?: boolean;
 }
-export let AjvValidatorOptions: AjvValidatorOptionsStatic;
-export interface AjvValidatorOptionsStatic {
+
+export interface AjvValidatorOptions {
     new(options?: ajvValidatorOptions): AjvValidatorOptions;
 }
 
-let InputValidationOptions: InputValidationOptionsStatic;
 export interface inputValidationOptions {
     beautifyErrors?: boolean;
     firstError?: boolean;
 }
-export interface InputValidationOptionsStatic {
+export interface InputValidationOptions {
     new(options?: inputValidationOptions): InputValidationOptions;
 }
